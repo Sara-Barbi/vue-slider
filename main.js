@@ -1,5 +1,6 @@
 let app = new Vue({
     el:"#root",
+    
     data:{
         imgArr : [
             `consegna/img/01.jpg`,
@@ -23,9 +24,25 @@ let app = new Vue({
             'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
             'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ulla',
             'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam',
-        ]
+        ],
+
+        contatore:0,
         
     },
+    methods:{
+        attiva: function(indiceImg){
+            if(indiceImg== this.contatore){
+                return "attiva";
+            }else{
+                return "d_mynone";
+            }
+        }
+        
+        
+        
+        
+        
+    }
     
         
     

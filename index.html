@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">      <!--Bootstrap ICONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <!--Font AWESOME ICONS-->
     <link rel="stylesheet" href="style.css">                     <!--Style.css-->
-    <title>Document</title>
+    <title>Document VUE</title>
 </head>
 <body>
     
@@ -21,13 +21,13 @@
             <div id="primo" class="row g-0">
                 <div class="col-9 position-relative" id="img_principale">
 
-                    <div class=" myheight">
-                        <img v-for = "(elemento,indice) in imgArr" :src="elemento">     
+                    <div class=" myheight " v-for = "(imgPrinc,indice) in imgArr" :class="attiva(indice)">
+                        <img  :src="imgPrinc">     
 
                         <div class="position-absolute text-white" id="title">
-                            <h3 v-for = "(elemento,indice) in title"> {{elemento}} </h3>
+                            <h3 v-for = "(titolo,indice) in title"> {{titolo}} </h3>
                             <p  v-for = "(paragrafo,indice) in text"> {{paragrafo}} </p>
-                         </div>
+                        </div>
                     </div>
 
                 </div>
@@ -35,7 +35,7 @@
                 <div class=" col-3 position-relative">  
                     <div class="row flex-column">
                         <div id="img_sec" class="col"> 
-                            <img class="item mystyle img-fluid" id="myitem" v-for = "(elemento,indice) in imgArr" :src="elemento" alt="">
+                            <img class="item mystyle img-fluid" id="myitem" v-for = "(imgSec,indice) in imgArr" :src="imgSec" alt="" :class="attiva(indice)" @click = " contatore = indice">
                             <div id="up" class="position-absolute"><i class="bi bi-arrow-up-circle"></i></div>
                             <div id="down" class="position-absolute"><i class="bi bi-arrow-down-circle"></i></div>
                         </div>
