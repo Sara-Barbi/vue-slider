@@ -20,21 +20,24 @@
         <div class="container mt-5">
             <div id="primo" class="row g-0">
                 <div class="col-9 position-relative" id="img_principale">
-                    <img v-for = "(elemento,indice) in imgArr" v-bind:src="elemento" alt="">
+
+                    <div class=" myheight d_mynone" id="">
+                        <img  v-for = "(elemento,indice) in imgArr" v-bind:src="elemento"></img>     
+                        <div class="position-absolute text-white" id="title"><h3 v-for = "(elemento,indice) in imgArr"> </h3><p>  </p> </div>
+                    </div>
+
                 </div>
                 
                 <div class=" col-3 position-relative">  
                     <div class="row flex-column">
                         <div id="img_sec" class="col"> 
-                           
-
+                            <div id="up" class="position-absolute"><i class="bi bi-arrow-up-circle"></i></div>
+                            <div id="down" class="position-absolute"><i class="bi bi-arrow-down-circle"></i></div>
                         </div>
                         
                     </div>
-                    <div>
-                        <div id="up" class="position-absolute"><i class="bi bi-arrow-up-circle"></i></div>
-                        <div id="down" class="position-absolute"><i class="bi bi-arrow-down-circle"></i></div>
-                    </div>
+
+
                 </div>
             </div>           
         </div>
