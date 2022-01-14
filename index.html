@@ -20,13 +20,21 @@
         <div class="container mt-5">
             <div id="primo" class="row g-0">
                 <div class="col-9 position-relative" id="img_principale">
-                    
+
+                    <div class=" myheight " v-for = "(elemento,indice) in imgArr" >
+                        <img  :src="elemento">     
+                        <div class="position-absolute text-white" id="title">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>`;
+
                 </div>
                 
                 <div class=" col-3 position-relative">  
                     <div class="row flex-column">
                         <div id="img_sec" class="col" v-for = "(elemento,indice) in imgArr"> 
-                            <img :src="elemento" alt="">
+                            <img class="item mystyle img-fluid" id="myitem"  :src="elemento" alt="">
                         </div>
                         </div>
                         
