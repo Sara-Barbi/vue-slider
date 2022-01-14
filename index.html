@@ -21,12 +21,12 @@
             <div id="primo" class="row g-0">
                 <div class="col-9 position-relative" id="img_principale">
 
-                    <div class=" myheight " v-for = "(imgPrinc,indice) in imgArr" :class="attiva(indice)">
-                        <img  :src="imgPrinc">     
+                    <div class=" myheight"  >
+                        <img v-for = "(imgPrinc,indice) in imgArr" :src="imgPrinc">     
 
-                        <div class="position-absolute text-white" id="title">
+                        <div class="position-absolute text-white " id="title">
                             <h3 v-for = "(titolo,indice) in title"> {{titolo}} </h3>
-                            <p  v-for = "(paragrafo,indice) in text"> {{paragrafo}} </p>
+                            <p v-for = "(paragrafo,indice) in text"> {{paragrafo}} </p>
                         </div>
                     </div>
 
@@ -35,7 +35,7 @@
                 <div class=" col-3 position-relative">  
                     <div class="row flex-column">
                         <div id="img_sec" class="col"> 
-                            <img class="item mystyle img-fluid" id="myitem" v-for = "(imgSec,indice) in imgArr" :src="imgSec" alt="" :class="attiva(indice)" @click = " contatore = indice">
+                            <img class="item mystyle img-fluid" id="myitem" v-for = "(imgSec,indice) in imgArr" :src="imgSec" alt=""  >
                             <div id="up" class="position-absolute"><i class="bi bi-arrow-up-circle"></i></div>
                             <div id="down" class="position-absolute"><i class="bi bi-arrow-down-circle"></i></div>
                         </div>

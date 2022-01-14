@@ -9,22 +9,22 @@ let app = new Vue({
             `consegna/img/04.jpg`,
             `consegna/img/05.jpg`
         ],
-        
+    
           title : [
             'Svezia',
             'Svizzera',
             'Gran Bretagna',
             'Germania',
             'Paradise'
-        ],
+          ],
+            text : [
+                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ulla',
+                'Lorem ipsum',
+                'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ulla',
+                'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam',
+            ],
         
-         text : [
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ulla',
-            'Lorem ipsum',
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ulla',
-            'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam',
-        ],
 
         contatore:0,
         
@@ -32,9 +32,9 @@ let app = new Vue({
     methods:{
         attiva: function(indiceImg){
             if(indiceImg== this.contatore){
-                return "attiva";
+                return "!attiva";
             }else{
-                return "d_mynone";
+                return "";
             }
         }
         
@@ -50,7 +50,7 @@ let app = new Vue({
 })
 
 
-
+//:class="attiva(indice)" @click = " contatore = indice"
 
 /*
 let contenutoRowPrinc = '';
