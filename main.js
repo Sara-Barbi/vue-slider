@@ -1,5 +1,4 @@
-let app = new Vue(
-    {
+let app = new Vue({
     el:"#root",
     data:{
         imgArr : [
@@ -27,12 +26,11 @@ let app = new Vue(
         ]
         
     },
-    methods:{
+    
         
-    }
+    
    
-}
-)
+})
 
 
 
