@@ -12,6 +12,9 @@
   filter: brightness(100%);
 }
 
+#img_principale{
+    width: 100px;
+}
 
 
 .myheight img{

@@ -1,4 +1,5 @@
-let app = new Vue({
+let app = new Vue(
+    {
     el:"#root",
     data:{
         imgArr : [
@@ -25,9 +26,13 @@ let app = new Vue({
             'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam',
         ]
         
+    },
+    methods:{
+        
     }
    
-})
+}
+)
 
 
 
