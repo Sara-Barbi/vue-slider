@@ -34,15 +34,13 @@
                 
                 <div class=" col-3 position-relative">  
                     <div class="row flex-column">
-                        <div id="img_sec" class="col" v-for = "(elemento,indice) in imgArr"> 
-                            <img class="item mystyle img-fluid" id="myitem"  :src="elemento" alt="">
+                        <div id="img_sec" class="col"> 
+                            <img class="item mystyle img-fluid" id="myitem" v-for = "(elemento,indice) in imgArr" :src="elemento" alt="">
+                            <div id="up" class="position-absolute"><i class="bi bi-arrow-up-circle"></i></div>
+                            <div id="down" class="position-absolute"><i class="bi bi-arrow-down-circle"></i></div>
                         </div>
                     </div>
                         
-                    </div>
-                    <div>
-                        <div id="up" class="position-absolute"><i class="bi bi-arrow-up-circle"></i></div>
-                        <div id="down" class="position-absolute"><i class="bi bi-arrow-down-circle"></i></div>
                     </div>
                 </div>
             </div>           
