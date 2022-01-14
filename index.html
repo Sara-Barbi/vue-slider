@@ -21,13 +21,14 @@
             <div id="primo" class="row g-0">
                 <div class="col-9 position-relative" id="img_principale">
 
-                    <div class=" myheight " v-for = "(elemento,indice) in imgArr" >
-                        <img  :src="elemento">     
+                    <div class=" myheight">
+                        <img v-for = "(elemento,indice) in imgArr" :src="elemento">     
+
                         <div class="position-absolute text-white" id="title">
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                    </div>`;
+                            <h3 v-for = "(elemento,indice) in title"> {{elemento}} </h3>
+                            <p  v-for = "(paragrafo,indice) in text"> {{paragrafo}} </p>
+                         </div>
+                    </div>
 
                 </div>
                 
@@ -36,7 +37,7 @@
                         <div id="img_sec" class="col" v-for = "(elemento,indice) in imgArr"> 
                             <img class="item mystyle img-fluid" id="myitem"  :src="elemento" alt="">
                         </div>
-                        </div>
+                    </div>
                         
                     </div>
                     <div>
