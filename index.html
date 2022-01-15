@@ -21,12 +21,12 @@
             <div id="primo" class="row g-0">
                 <div class="col-9 position-relative" id="img_principale">
 
-                    <div class=" myheight"  >
-                        <img v-for = "(imgPrinc,indice) in imgArr" :src="imgPrinc">     
-
+                    <div class=" myheight"  v-for = "(imgPrinc,indice) in imgArr" :class="iscorrente(indice)">
+                        <img :src="imgPrinc">     
+                        
                         <div class="position-absolute text-white " id="title">
-                            <h3 v-for = "(titolo,indice) in title"> {{titolo}} </h3>
-                            <p v-for = "(paragrafo,indice) in text"> {{paragrafo}} </p>
+                            <h3 v-for = "(titolo,indice) in title" :class="iscorrente(indice)"> {{titolo}} </h3>
+                            <p v-for = "(paragrafo,indice) in text" :class="iscorrente(indice)"> {{paragrafo}} </p>
                         </div>
                     </div>
 

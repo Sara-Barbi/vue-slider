@@ -2,6 +2,7 @@ let app = new Vue({
     el:"#root",
     
     data:{
+        elementoAttivo: 0,
         imgArr : [
             `consegna/img/01.jpg`,
             `consegna/img/02.jpg`,     
@@ -26,15 +27,15 @@ let app = new Vue({
             ],
         
 
-        contatore:0,
+        
         
     },
     methods:{
-        attiva: function(indiceImg){
-            if(indiceImg== this.contatore){
-                return "!attiva";
+        iscorrente: function(indiceimmagine){
+            if(indiceimmagine== this.elementoAttivo){
+                return "attiva";
             }else{
-                return "";
+                return "d_mynone";
             }
         }
         
