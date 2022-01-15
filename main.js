@@ -37,6 +37,13 @@ let app = new Vue({
             }else{
                 return "d_mynone";
             }
+        },
+        isbrightness: function(indiceimmaginesec){
+            if(indiceimmaginesec== this.elementoAttivo){
+                return "active";
+            }else{
+                return "mystyle";
+            }
         }
         
         
