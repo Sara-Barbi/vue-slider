@@ -44,8 +44,19 @@ let app = new Vue({
             }else{
                 return "mystyle";
             }
+        },
+        prossimo: function(){
+            this.elementoAttivo ++;
+            if(this.elementoAttivo == this.imgArr.length){
+                this.elementoAttivo=0;
+            }
+        },
+        precedente: function(){
+            this.elementoAttivo --;
+            if(this.elementoAttivo < 0){
+                this.elementoAttivo = this.imgArr.length-1;
+            }
         }
-        
         
         
         
